@@ -1,0 +1,92 @@
+:root {
+  --gris-clair: #E0E1E2;
+  --orange: #F19800;
+  --gris-foncé: #4B5563;
+  --blanc: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+}
+header nav .logo-name{
+    font-family: h;
+    font-size: 40px;
+    color: black;
+}
+header nav {
+    background-color: var(--gris-foncé);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    
+}
+header nav.menu {
+    background-color: green;
+    
+    
+}
+header nav  ul li a:hover{
+    color: var(--orange)
+}
+header nav  ul .btn a:hover{
+    color: var(--blanc)
+}
+header nav  ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--blanc);
+    margin:0 7px;
+}
+
+header nav  ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn{
+    font-size: 18px;
+    background-color: var(--orange);
+    text-transform: capitalize;
+    padding: 10px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--blanc);
+    transition: 0.3s;
+    margin:5px;
+    border-radius: 15px;
+}
+.btn:hover{
+    scale:1.1;
+    color: var(--blanc);
+}
+
+
+
+header .logo img{
+    width: 110px;
+ 
+}
+
+.navbar.fixed {
+    position: fixed;      /* ✅ لتثبيت الـ navbar */
+    top: 0;               /* ✅ تبقى في أعلى الصفحة */
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* حتى لا تختفي خلف العناصر الأخرى */
+    transition: .3s ease-in-out; /* للحركة السلسة فقط */
+}
