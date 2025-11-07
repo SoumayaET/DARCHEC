@@ -1,6 +1,8 @@
 
 import { FaStar , FaShoppingBag } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { BsShop } from "react-icons/bs";
+
 export default function Card({img, title, star, price}) {
   return (
     <section className='card-produit2'>
@@ -24,9 +26,10 @@ export default function Card({img, title, star, price}) {
             <button className="btn-ajouter2">
               ajouter
             </button>
-            <section className='btn-Loueur'>
-            <Link to='/NegafaProfile' className="btn-ajouter">Loueur</Link>
+            
           </section>
+          <section className='loueur'>
+            <Link to='/NegafaProfile' className="btn-Loueur2"><BsShop /></Link>
           </section>
         </div>
       </section>

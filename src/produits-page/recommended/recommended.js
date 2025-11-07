@@ -5,7 +5,7 @@ export default function Recommended({ handleClick }) {
   return (
     <>
       <div>
-        <h2 className='recommended-title'>Recommended</h2>
+        <h2 className='recommended-title'></h2>
         <div className="recommended-flex">
           <button
             className='btns'

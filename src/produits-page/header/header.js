@@ -13,11 +13,10 @@ export default function Header() {
     }
   }
 
-  // ✅ نضيف مستمع التمرير داخل useEffect مرة واحدة فقط
+  
   useEffect(() => {
     window.addEventListener('scroll', setFixed);
 
-    // ✅ تنظيف الحدث عند إزالة المكون لتجنب المشاكل
     return () => {
       window.removeEventListener('scroll', setFixed);
     };

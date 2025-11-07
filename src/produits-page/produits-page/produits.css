@@ -6,6 +6,7 @@
 }
 .card-container2{
     display: flex;
+    
     /* Si le conteneur est étroit, les éléments seront disposés sur
     plusieurs rangées plutôt que hors du cadre.*/
     flex-wrap: wrap;
@@ -14,6 +15,7 @@
     margin-top: 2rem;
     z-index : -2;
     margin-bottom: 50px;
+    
 }
 .card-produit-img2{
     width:13rem;
@@ -25,7 +27,7 @@
 }
 .card-produit-details2{
     margin: auto;
-    margin-left: 1rem;
+    
     gap: 1px;
 
 }
@@ -37,12 +39,12 @@
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ظل خفيف وناعم */
     transition: box-shadow 0.3s ease;
-
+    position: relative;
 
 }
 .card-produit-title2{
     
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
 }
 .card-produit-reviews2{
     margin-bottom: 1rem;
@@ -54,7 +56,7 @@
 }
 .total-reviews{
     font-size:0.9rem ;
-    margin-left: 10px;
+    margin:auto;
 }
 .card-produit-price2 .price{
     font-size: 25px;
@@ -63,7 +65,7 @@
 .card-produit-price2{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .btn-ajouter2{
@@ -79,16 +81,12 @@
   margin-bottom: 4%;
   box-shadow: inset 0 0 15px rgb(152, 105, 19);
 }
-.btn-ajouter2{
-  padding : 4px 7px;
-  margin-right: 8px;
-  background-color:var(--orange);  
-  background: var(--orange);
-  border:none;
-  border: 0.6px solid #ccc;
-  border-radius: 5px;
-  color: #ffffff;
-  cursor: pointer;
-  margin-bottom: 4%;
-  box-shadow: inset 0 0 15px rgb(152, 105, 19);
+.btn-Loueur2{
+
+    position: absolute;
+    right: 4px;
+    bottom: 1px;
+    cursor: pointer;
+  
+  
 }
