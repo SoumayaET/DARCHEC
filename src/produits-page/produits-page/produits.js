@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import Card from '../components/card' 
 export default function Produits({result}) {
   return (
-    <section className='card-container'>
-      {result}
-    </section>
+    <div className="container">
+      <section className='card-container'>
+        {result}
+      </section>
+    </div>
   );
 }

@@ -1,41 +1,51 @@
-import  './price.css'
+import './price.css';
 import Input from '../../components/input';
-export default function Price({ handleChange } ) {
+
+export default function Price({ handleChange }) {
   return (
     <div className='ml'>
       <h2 className='sidebare-title price-title'>Prix</h2>
-      <label  className="sidebare-label-container">
-          <input onChange={ handleChange } type="radio" value="" name="test2"  />
-          <span className="checkmark"></span>Tout  
-        </label>
-      
-      
-      <Input 
-        handleChange={ handleChange } 
+
+      {/* Bouton Tout */}
+      <label className="sidebare-label-container">
+        <input
+          onChange={(e) => handleChange(e, 'price')}
+          type="radio"
+          value=""
+          name="price"
+        />
+        <span className="checkmark"></span>Tout
+      </label>
+
+      {/* Plages de prix */}
+      <Input
+        handleChange={handleChange}
         value="200 DH"
         title="0 DH - 200DH"
-        name="test2"
+        name="price"
+        type="price"
       />
-      <Input 
-        handleChange={ handleChange } 
+      <Input
+        handleChange={handleChange}
         value="300"
         title="200DH - 300DH"
-        name="test2"
+        name="price"
+        type="price"
       />
-      <Input 
-        handleChange={ handleChange } 
-        value= "400 DH"
+      <Input
+        handleChange={handleChange}
+        value="400 DH"
         title="200DH - 400DH"
-        name="test2"
+        name="price"
+        type="price"
       />
-      <Input 
-        handleChange={ handleChange } 
+      <Input
+        handleChange={handleChange}
         value="500 DH"
         title="400DH - 500DH"
-        name="test2"
+        name="price"
+        type="price"
       />
-      
-      
     </div>
-  )
+  );
 }

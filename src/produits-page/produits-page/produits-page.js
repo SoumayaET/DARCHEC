@@ -8,60 +8,83 @@ import produits from '../../data/data.js';
 import Card from '../components/card.js';
 
 export default function Produits_page() {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  //------------input Filter------------
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedColor, setSelectedColor] = useState('');
+  const [selectedPrice, setSelectedPrice] = useState('');
+  const [selectedGenre, setSelectedGenre] = useState('');
   const [query, setQuery] = useState('');
 
+  //------------input Filter------------
   const handleinputChange = (event) => {
     setQuery(event.target.value);
   };
 
-  const filteredItems = produits.filter(
-    (produit) =>
-      produit.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
-  );
-
   //------------radio Filter------------
-  const handleChange = (event) => {
-    setSelectedCategory(event.target.value);
+  const handleChange = (event, type) => {
+    const value = event.target.value;
+    if (type === 'category') setSelectedCategory(value);
+    if (type === 'color') setSelectedColor(value);
+    if (type === 'price') setSelectedPrice(value);
   };
 
   //------------buttons Filter------------
-  const handleClick = (event) => {
-    setSelectedCategory(event.target.value);
+  const handleClick = (event, type = 'genre') => {
+    const value = event.target.value;
+    if (type === 'genre') setSelectedGenre(value);
   };
 
-  function filteredData(produits, selected, query) {
+  function filteredData(produits, category, color, price, genre, query) {
     let filteredProduits = produits;
 
-    // filtering input Items
-    if (query) {
-      filteredProduits = filteredItems;
-    }
-
-    // selected Filter
-    if (selected) {
-      filteredProduits = filteredProduits.filter(
-        ({ genre, category, color, price }) =>
-          genre === selected ||
-          category === selected ||
-          color === selected ||
-          price === selected
+    if (query && query.trim() !== '') {
+      filteredProduits = produits.filter((produit) =>
+        produit.title.toLowerCase().includes(query.toLowerCase())
       );
     }
 
-    return filteredProduits.map(({img, title, star, price}) => (
-      < Card 
-      key={Math.random()}
-      img={img}
-      title={title}
-      star={star}
-      price={price}
+    if (category && category.trim() !== '') {
+      filteredProduits = filteredProduits.filter(
+        (produit) => produit.category === category
+      );
+    }
+
+    if (color && color.trim() !== '') {
+      filteredProduits = filteredProduits.filter(
+        (produit) => produit.color === color
+      );
+    }
+
+    if (price && price.trim() !== '') {
+      filteredProduits = filteredProduits.filter(
+        (produit) => produit.price === price
+      );
+    }
+
+    if (genre && genre.trim() !== '') {
+      filteredProduits = filteredProduits.filter(
+        (produit) => produit.genre === genre
+      );
+    }
+
+    return filteredProduits.map(({ img, title, star, price }) => (
+      <Card
+        key={Math.random()}
+        img={img}
+        title={title}
+        star={star}
+        price={price}
       />
     ));
   }
-  const result = filteredData(produits,selectedCategory,query);
+
+  const result = filteredData(
+    produits,
+    selectedCategory,
+    selectedColor,
+    selectedPrice,
+    selectedGenre,
+    query
+  );
 
   return (
     <div>
@@ -69,7 +92,7 @@ export default function Produits_page() {
       <Sidebare handleChange={handleChange} />
       <Nav query={query} handleinputChange={handleinputChange} />
       <Recommended handleClick={handleClick} />
-      <Produits result={result } />
+      <Produits result={result} />
     </div>
   );
 }

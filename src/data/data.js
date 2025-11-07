@@ -1,6 +1,7 @@
 import { AiFillStar } from "react-icons/ai";
 
 const data = [
+  // ---- Produits Femme - Caftan ----
   {
     img: "/images/caf-3.jpeg",
     title: "Caftan Andalous",
@@ -10,6 +11,7 @@ const data = [
     color: "blanche",
     genre: "femme",
     category: "vetements",
+    subCategory: "caftan",
     loueur: "ngafa sara",
   },
   {
@@ -21,6 +23,7 @@ const data = [
     color: "rouge",
     genre: "femme",
     category: "vetements",
+    subCategory: "caftan",
     loueur: "ngafa fatima",
   },
   {
@@ -32,6 +35,7 @@ const data = [
     color: "bleu",
     genre: "femme",
     category: "vetements",
+    subCategory: "caftan",
     loueur: "ngafa hafsa",
   },
   {
@@ -43,8 +47,11 @@ const data = [
     color: "noire",
     genre: "femme",
     category: "vetements",
+    subCategory: "caftan",
     loueur: "hala chop",
   },
+
+  // ---- Produits Homme - Costum ----
   {
     img: "/images/cus-1.jpeg",
     title: "Costum Classique",
@@ -54,6 +61,7 @@ const data = [
     color: "noir",
     genre: "homme",
     category: "vetements",
+    subCategory: "costum",
     loueur: "costume shop",
   },
   {
@@ -65,6 +73,7 @@ const data = [
     color: "bleu",
     genre: "homme",
     category: "vetements",
+    subCategory: "costum",
     loueur: "ahmed shop",
   },
   {
@@ -76,6 +85,7 @@ const data = [
     color: "gris",
     genre: "homme",
     category: "vetements",
+    subCategory: "costum",
     loueur: "saad shop",
   },
   {
@@ -87,8 +97,11 @@ const data = [
     color: "gris",
     genre: "homme",
     category: "vetements",
+    subCategory: "costum",
     loueur: "amine shop",
   },
+
+  // ---- Produits Femme - Sacs ----
   {
     img: "/images/sac-1.jpeg",
     title: "Sac Pochette",
@@ -98,6 +111,7 @@ const data = [
     color: "brun",
     genre: "femme",
     category: "sacs",
+    subCategory: "sacs",
     loueur: "ngafa sara",
   },
   {
@@ -109,6 +123,7 @@ const data = [
     color: "bleu",
     genre: "femme",
     category: "sacs",
+    subCategory: "sacs",
     loueur: "ngafa hafsa",
   },
   {
@@ -120,8 +135,11 @@ const data = [
     color: "brun",
     genre: "femme",
     category: "sacs",
+    subCategory: "sacs",
     loueur: "ngafa layla",
   },
+
+  // ---- Produits Femme - Chaussures ----
   {
     img: "/images/chaussure-1.jpeg",
     title: "Chaussures Élégantes",
@@ -131,6 +149,7 @@ const data = [
     color: "gris",
     genre: "femme",
     category: "chaussures",
+    subCategory: "chaussures",
     loueur: "amine shop",
   },
 ];

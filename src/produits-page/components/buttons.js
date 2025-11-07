@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export default function Buttons({onClickHandler,value,title}) {
+export default function Buttons({ onClickHandler, value, title, type }) {
   return (
-    <button onClick={onClickHandler} value={value} className='btns'>
+    <button
+      onClick={(e) => onClickHandler(e, type)}
+      value={value}
+      className='btns'
+    >
       {title}
     </button>
-  )
+  );
 }

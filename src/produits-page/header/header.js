@@ -28,9 +28,9 @@ export default function Header() {
       <nav className={fix ? 'navbar fixed' : 'navbar'}>
         <h4 className='logo-name'>DARCHEC</h4>
         <ul>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/produits-page">Produits</Link></li>
-          <li><Link to="/a-propos">A propos</Link></li>
+          
+          <li><Link to="/produits-page">Accueil</Link></li>
+          <li><Link to="/propos">A propos</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li className='btn'><Link to="/inscription">s'inscrire</Link></li>
           <li className='btn'><Link to="/connexion">Connexion</Link></li>
