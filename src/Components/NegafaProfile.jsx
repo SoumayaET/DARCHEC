@@ -42,7 +42,7 @@ export default function NegafaProfile() {
         <div className="icon"><AiOutlineMessage size={28} /></div>
       </aside>
 
-      <main className="container">
+      <main className="container1">
         <header className="title">
           <h1>Negafa Style</h1>
           <div className="title-underline" />
@@ -76,7 +76,7 @@ export default function NegafaProfile() {
           <h2>Caftans</h2>
           <div className="cards">
             {caftans.map((item) => (
-              <Link to={`/caftan/${item.id}`} key={item.id} className="card">
+              <Link to={`/CaftanDetails/${item.id}`} key={item.id} className="card">
                 <div className="card-img">
                   <img src={item.img} alt={item.name} />
                 </div>

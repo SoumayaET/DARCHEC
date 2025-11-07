@@ -9,21 +9,21 @@ const HomePage = () => {
 
       <div className="cards-container">
         {/* 🟡 CLIENT */}
-        <Link to="/client" className="card">
+        <Link to="/insClient" className="card">
           <img src="/Logo10.jpg" alt="Client" className="card-image" />
           <p>je veux louer des tenues</p>
           <h2>Client</h2>
         </Link>
 
         {/* 🏪 LOUEUR */}
-        <Link to="/loueur" className="card">
+        <Link to="/insLoueur" className="card">
           <img src="/Logo20.jpg" alt="Loueur" className="card-image" />
           <p>je veux proposer mes tenues à la location</p>
           <h2>Loueur</h2>
         </Link>
 
         {/* 🛵 LIVREUR */}
-        <Link to="/livreur" className="card">
+        <Link to="/insLivreur" className="card">
           <img src="/Logo30.jpg" alt="Livreur" className="card-image" />
           <p>je veux livrer les commandes</p>
           <h2>Livreur</h2>

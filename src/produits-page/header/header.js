@@ -32,7 +32,7 @@ export default function Header() {
           <li><Link to="/produits-page">Accueil</Link></li>
           <li><Link to="/propos">A propos</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li className='btn'><Link to="/inscription">s'inscrire</Link></li>
+          <li className='btn'><Link to="/HomePage">s'inscrire</Link></li>
           <li className='btn'><Link to="/connexion">Connexion</Link></li>
         </ul>
       </nav>

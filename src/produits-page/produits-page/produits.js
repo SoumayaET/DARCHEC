@@ -5,7 +5,7 @@ import Card from '../components/card'
 export default function Produits({result}) {
   return (
     <div className="container">
-      <section className='card-container'>
+      <section className='card-container2'>
         {result}
       </section>
     </div>
