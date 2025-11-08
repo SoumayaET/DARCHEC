@@ -43,7 +43,7 @@ export default function Propos() {
           </div> 
         </div>
       <div className='image-section-propos'>
-        <img className='logo-propos' src="/images/logo-image.jpeg" alt="" />
+        <img className='logo-propos' src="/images/logo-2.jpg" alt="" />
         
       </div>
       <div className="social-propos">

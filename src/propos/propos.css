@@ -1,3 +1,6 @@
+body{
+  background-color: #f6f6f6;
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -151,13 +154,13 @@
   }
 
   .social-propos {
+    position: static; /* يلغي التمركز المطلق */
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-    
-    
   }
+
 
   .link-social-propos {
     font-size: 19px;
