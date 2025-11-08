@@ -5,7 +5,7 @@ import Colors from "./colors/colors"
 export default function Sidebare({ handleChange }) {
   return (
     <>
-      <section className="sidebare">
+      <section className="sidebare" style={{backgroundColor:"white"}}>
         
           <Category handleChange={handleChange}  />
           <Price handleChange={handleChange}  />

@@ -5,32 +5,51 @@
   --blanc: #ffffff;
 }
 
-.profile-container{
+.profile-container-accueil{
     margin-right: 10px;
+    position: relative;
+
 }
-.nav-produits{
+.nav-produits-accueil{
     display: flex;
-    border-bottom: 2px solid #f3f3f3;
+    border-bottom: 2px solid #aeaeae;
     align-items: center;
     padding: 5px 20px;
     z-index: 999;
     margin-left: 15rem;
     justify-content: space-between;
-    
+    background-color: #f9f6f6;
 }
-input {
+.search-input-accueil{
     padding: 12px 20px;
     border: none;
-    background: #f7f6f6;
+    background: #ffffff;
     margin-right: 20px;
     border-radius: 5px;
     position: relative;
     width: 14rem;
+
+    outline: none;  
+    
 }
-.nav-produits .nav-icons{
+.nav-produits-accueil .nav-icons-accueil{
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 2rem;
     color: #404040;
     
+}
+.count-card{
+  position: absolute;
+  top: 40%;
+  right: 60%;
+  background-color: #ef4444; /* bg-red-500 */
+  color: white;              /* text-white */
+  font-size: 0.875rem;       /* text-sm */
+  width: 1.25rem;            /* w-5 */
+  height: 1.25rem;           /* h-5 */
+  border-radius: 9999px;     /* rounded-full */
+  display: flex;             /* flex */
+  justify-content: center;   /* justify-center */
+  align-items: center;       /* items-center */
 }

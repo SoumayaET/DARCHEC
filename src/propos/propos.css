@@ -1,6 +1,4 @@
-body{
-  background-color: #f6f6f6;
-}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -10,6 +8,8 @@ body{
 .section-propos{
   height: 100vh;
   width: 100%;
+  background-color: #f6f6f6;
+
 }
 .section-propos .container-propos{
   width: 80%;

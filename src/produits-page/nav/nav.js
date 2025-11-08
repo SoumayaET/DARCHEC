@@ -5,26 +5,27 @@ import './nav.css'
 
 export default function Nav() {
   return (
-    <nav className='nav-produits'>
-      <div className='nav-container'>
+    <nav className='nav-produits-accueil'>
+      <div className='nav-container-accueil'>
         <input
           type='text'
-          className='search-input'
+          className='search-input-accueil'
           placeholder='Enter your search'
         />
       </div>
-      <div className='profile-container'>
+      <div className='profile-container-accueil'>
         <a href='#'>
-          <FaShoppingCart className='nav-icons' />
+          <FaShoppingCart className='nav-icons-accueil' />
+        </a><span className='count-card'> 0</span>
+        
+
+        
+        
+        <a href='#'>
+          <TbTruckDelivery className='nav-icons-accueil' />
         </a>
         <a href='#'>
-          <FiHeart className='nav-icons' />
-        </a>
-        <a href='#'>
-          <TbTruckDelivery className='nav-icons' />
-        </a>
-        <a href='#'>
-          <FaUser className='nav-icons' />
+          <FaUser className='nav-icons-accueil' />
         </a>
       </div>
     </nav>

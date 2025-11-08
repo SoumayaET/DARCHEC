@@ -4,6 +4,7 @@ const data = [
   // ---- Produits Femme - Caftan ----
   {
     img: "/images/caf-3.jpeg",
+    id : 1,
     title: "Caftan Andalous",
     star: <AiFillStar className="ratings-star" />,
     price: "200 DH",
@@ -16,6 +17,7 @@ const data = [
   },
   {
     img: "/images/caf-2.jpeg",
+    id :2 ,
     title: "Caftan Royal",
     star: <AiFillStar className="ratings-star" />,
     price: "300 DH",
@@ -28,6 +30,7 @@ const data = [
   },
   {
     img: "/images/caf-6.jpeg",
+    id :3 ,
     title: "Caftan Traditionnel",
     star: <AiFillStar className="ratings-star" />,
     price: "400 DH",
@@ -40,6 +43,7 @@ const data = [
   },
   {
     img: "/images/caf-1.jpeg",
+    id :4 ,
     title: "Caftan Brodé",
     star: <AiFillStar className="ratings-star" />,
     price: "400 DH",
@@ -54,6 +58,7 @@ const data = [
   // ---- Produits Homme - Costum ----
   {
     img: "/images/cus-1.jpeg",
+    id : 5,
     title: "Costum Classique",
     star: <AiFillStar className="ratings-star" />,
     price: "200 DH",
@@ -66,6 +71,7 @@ const data = [
   },
   {
     img: "/images/cus-4.jpeg",
+    id : 6,
     title: "Costum Moderne",
     star: <AiFillStar className="ratings-star" />,
     price: "300 DH",
@@ -78,6 +84,7 @@ const data = [
   },
   {
     img: "/images/cus-2.jpeg",
+    id :7,
     title: "Costum Oversize",
     star: <AiFillStar className="ratings-star" />,
     price: "500 DH",
@@ -90,6 +97,7 @@ const data = [
   },
   {
     img: "/images/cus-3.jpeg",
+    id :8 ,
     title: "Costum Slim Fit",
     star: <AiFillStar className="ratings-star" />,
     price: "500 DH",
@@ -104,6 +112,7 @@ const data = [
   // ---- Produits Femme - Sacs ----
   {
     img: "/images/sac-1.jpeg",
+    id : 9,
     title: "Sac Pochette",
     star: <AiFillStar className="ratings-star" />,
     price: "200 DH",
@@ -116,6 +125,7 @@ const data = [
   },
   {
     img: "/images/sac-5.jpeg",
+    id :10 ,
     title: "Mini Sac Trendy",
     star: <AiFillStar className="ratings-star" />,
     price: "200 DH",
@@ -128,6 +138,7 @@ const data = [
   },
   {
     img: "/images/sac-3.jpeg",
+    id :11 ,
     title: "Sac Vintage",
     star: <AiFillStar className="ratings-star" />,
     price: "300 DH",
@@ -142,6 +153,7 @@ const data = [
   // ---- Produits Femme - Chaussures ----
   {
     img: "/images/chaussure-1.jpeg",
+    id :12 ,
     title: "Chaussures Élégantes",
     star: <AiFillStar className="ratings-star" />,
     price: "500 DH",
