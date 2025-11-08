@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
-import Connexion from './connexion/connexion.js';
+import LoginPage from './connexion/connexion.js';
 import Produit from './produits-page/produits-page/produits-page.js';
 import Propos from './propos/propos';
 import HomePage from './Components/HomePage';
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Produit />} />
         
-        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/connexion" element={<LoginPage />} />
         <Route path="/produits-page" element={<Produit />} />
         <Route path="/CaftanDetails" element={<CaftanDetails />} />
         <Route path="/propos" element={<Propos />} />

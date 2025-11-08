@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 80px;
+}
+
+.login-left {
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  font-size: 42px;
+  color: #2e2e2e;
+  margin: 0;
+}
+
+.brand-slogan {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #444;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+
+.login-btn{
+  background-color: orange;
+  color: black;
+  border: 2px solid white
+}
+.login-btn:hover {
+  background-color: #d88c00;
+}
+.login-btn ,
+.forgot-btn,
+.create-btn {
+   
+  
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.forgot-btn,
+.create-btn{
+  background-color: white;
+  color: orange;
+  border: 2px solid #ccc;
+}
+
+.forgot-btn:hover,
+.create-btn:hover {
+   background-color: orange;
+  color: white;
+} 
+.login-btn,
+.forgot-btn,
+.create-btn {
+  width: 100%; 
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;}
