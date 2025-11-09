@@ -14,12 +14,12 @@ export default function Produits_page() {
   const [selectedGenre, setSelectedGenre] = useState('');
   const [query, setQuery] = useState('');
 
-  //------------input Filter------------
+  const [panier, setPanier] = useState([]);
+
   const handleinputChange = (event) => {
     setQuery(event.target.value);
   };
 
-  //------------radio Filter------------
   const handleChange = (event, type) => {
     const value = event.target.value;
     if (type === 'category') setSelectedCategory(value);
@@ -27,11 +27,14 @@ export default function Produits_page() {
     if (type === 'price') setSelectedPrice(value);
   };
 
-  //------------buttons Filter------------
   const handleClick = (event, type = 'genre') => {
     const value = event.target.value;
     if (type === 'genre') setSelectedGenre(value);
   };
+
+  function handleAddToCart(produit) {
+    setPanier([...panier, produit]);
+  }
 
   function filteredData(produits, category, color, price, genre, query) {
     let filteredProduits = produits;
@@ -66,13 +69,14 @@ export default function Produits_page() {
       );
     }
 
-    return filteredProduits.map(({ img, title, star, price }) => (
+    return filteredProduits.map((produit) => (
       <Card
-        key={Math.random()}
-        img={img}
-        title={title}
-        star={star}
-        price={price}
+        key={produit.id}
+        img={produit.img}
+        title={produit.title}
+        star={produit.star}
+        price={produit.price}
+        onAddToCart={() => handleAddToCart(produit)}
       />
     ));
   }
@@ -90,7 +94,13 @@ export default function Produits_page() {
     <div>
       <Header />
       <Sidebare handleChange={handleChange} />
-      <Nav query={query} handleinputChange={handleinputChange} />
+      <Nav
+        query={query}
+        handleinputChange={handleinputChange}
+        cartCount={panier.length}
+        panier={panier}
+        setPanier={setPanier}
+      />
       <Recommended handleClick={handleClick} />
       <Produits result={result} />
     </div>

@@ -87,12 +87,42 @@ body{
   margin-bottom: 4%;
   box-shadow: inset 0 0 15px rgb(152, 105, 19);
 }
-.btn-Loueur2{
+.btn-profile-card{
 
     position: absolute;
-    right: 4px;
-    bottom: 1px;
+    right: 40%;
+    bottom: 1%;
     cursor: pointer;
-  
-  
+    padding: 1px 2px ;
+
+    background-color: rgb(63, 63, 63);   
+    
+    border:none;
+    border: 0.6px solid #ccc;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: inset 0 0 15px rgb(67, 66, 65);
+    
+
+}   
+.btn-profile-card:hover{
+
+    position: absolute;
+    right: 40%;
+    bottom: 0px;
+    cursor: pointer;
+    padding: 1px 2px ;
+    
+    
+    
+     
+    background: var(--gris-clair);
+    border:none;
+    border: 0.6px solid #ccc;
+    border-radius: 5px;
+    color: color;
+    cursor: pointer;
+    
+    
 }
