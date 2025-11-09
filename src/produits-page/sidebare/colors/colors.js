@@ -4,7 +4,7 @@ import Input from '../../components/input';
 export default function Colors({ handleChange }) {
   return (
     <div>
-      <h2 className="sidebare-title color-title">Color</h2>
+      <h2 className="sidebare-title color-title">Couleur</h2>
 
       {/* Bouton Tout */}
       <label className="sidebare-label-container">

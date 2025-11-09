@@ -151,14 +151,28 @@ const data = [
   },
 
   // ---- Produits Femme - Chaussures ----
+ 
   {
-    img: "/images/chaussure-1.jpeg",
+    img: "/images/chau-red.jpg",
     id :12 ,
     title: "Chaussures Élégantes",
     star: <AiFillStar className="ratings-star" />,
-    price: "500 DH",
+    price: "100 DH",
+    prevprice: "100",
+    color: "rouge",
+    genre: "femme",
+    category: "chaussures",
+    subCategory: "chaussures",
+    loueur: "amine shop",
+  },
+  {
+    img: "/images/chau-noir-1.jpg",
+    id :13,
+    title: "Chaussures noir",
+    star: <AiFillStar className="ratings-star" />,
+    price: "200 DH",
     prevprice: "200",
-    color: "gris",
+    color: "noir",
     genre: "femme",
     category: "chaussures",
     subCategory: "chaussures",

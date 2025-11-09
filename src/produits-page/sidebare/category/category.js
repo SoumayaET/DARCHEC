@@ -4,7 +4,7 @@ import Input from '../../components/input';
 export default function Category({ handleChange }) {
   return (
     <div>
-      <h2 className="sidebare-title">Category</h2>
+      <h2 className="sidebare-title">Catégorie</h2>
       <div>
         <label className="sidebare-label-container">
           <input

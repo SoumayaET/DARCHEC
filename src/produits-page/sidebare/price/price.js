@@ -35,7 +35,7 @@ export default function Price({ handleChange }) {
       <Input
         handleChange={handleChange}
         value="400 DH"
-        title="200DH - 400DH"
+        title="300DH - 400DH"
         name="price"
         type="price"
       />

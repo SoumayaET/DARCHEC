@@ -23,7 +23,7 @@ export default function Nav({ cartCount, panier, setPanier }) {
         <input
           type='text'
           className='search-input-accueil'
-          placeholder='Enter your search'
+          placeholder='Saisissez votre recherche'
         />
       </div>
 

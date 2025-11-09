@@ -49,15 +49,15 @@ export default function Contact() {
         <hr />
         <input value={formInput.nom} onChange={(event)=>{
           setFormInput({...formInput, nom: event.target.value});
-        } } type="text" placeholder='Nom' />
+        } } type="text" placeholder='Nom'  className='input-contact' />
 
         <input value={formInput.email} onChange={(event)=>{
           setFormInput({...formInput, email: event.target.value});
-        } } type="email" placeholder='E-mail' />
+        } } type="email" placeholder='E-mail' className='input-contact' />
 
         <textarea value={formInput.message} onChange={(event)=>{
           setFormInput({...formInput, message: event.target.value});
-        } } placeholder='Votre message' name="" id=""></textarea>      
+        } } placeholder='Votre message' name="" id="" className='textarea-contact'></textarea>      
         <button className={btndisablede ? "disabled-contact" : " "} disabled={btndisablede} onClick={handleformenvoyer}  id='btn-envoyer'>Envoyer</button>
       </form>
       <Alert errorMessage ={errorMessage} isVisible={showAlert} />
