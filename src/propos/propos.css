@@ -154,7 +154,7 @@
   }
 
   .social-propos {
-    position: static; /* يلغي التمركز المطلق */
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 10px;

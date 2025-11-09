@@ -37,9 +37,7 @@ export default function Propos() {
                  adaptés et une expérience fluide. DarChec, c’est bien plus qu’une plateforme : c’est un
                   hommage à l’élégance marocaine, une passerelle entre tradition et modernité.
             </p>
-            <div className="btn-propos">
-              <Link to="/" className='link-propos'>Lire plus</Link>
-            </div>
+            
           </div> 
         </div>
       <div className='image-section-propos'>
