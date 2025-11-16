@@ -1,0 +1,142 @@
+:root {
+  --gris-clair: #E0E1E2;
+  --orange: #F19800;
+  --gris-foncé: #4B5563;
+  --blanc: #ffffff;
+}
+body{
+    background-color: white;
+}
+.div-livreur{
+    display: flex;
+    background-color: #f6f6f6;  
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;   
+    gap: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 5px;
+    min-height: 100vh;
+    
+}
+.card-livreur{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;     
+    box-shadow:
+        0px 5px 10px rgba(0, 0, 0, 0.2),   /* أسفل */
+        5px 0px 10px rgba(0, 0, 0, 0.2),   /* يمين */
+        -5px 0px 10px rgba(0, 0, 0, 0.2);  /* يسار */
+    margin:5px;
+}
+.image-livreur{
+    width: 40%;
+    
+}
+.div-info-livreur{  
+    
+    width: 600px;
+    height: 250px;
+}
+.image-livreur img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.title-livreur{
+    
+    margin-top: 40px;
+    height: 50px;
+}
+.title-livreur h1{
+    
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #F19800;
+}
+.title-livreur h1::after{
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #ecbc6e;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+#btn-ville-livreur {
+    margin-top: 10px;
+    border-style: none;
+    font-size: 15px;
+    padding:5px 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.Nom-commercial-livreur{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+.info-livreur{
+    margin-left: 1rem;
+
+}
+.info{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    color: rgb(48, 48, 48);
+}
+.reviews-livreur{
+    font-size: 20px;
+}
+#link-whatsapp {
+    margin-top: 10px;
+    border-style: none;
+    font-size: 15px;
+    padding:5px 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #00a143;
+    color: white;
+    width: 120px;
+}
+#link-whatsapp a {
+  color: white;               /* لون النص */
+         /* لتوسيط الأيقونة والنص عمودياً */
+  align-items: center;
+  gap: 6px;   
+  justify-content: center;                /* مسافة صغيرة بين الأيقونة والنص */
+}
+@media screen and (max-width: 768px) {
+  .card-livreur{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.div-info-livreur{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.image-livreur{
+    width: 100% ;
+}
+.info-livreur{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+  }

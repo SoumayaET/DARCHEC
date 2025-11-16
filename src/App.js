@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-
-
+import LivreurProfile  from './livreur-profile/livreur-profile.js';
 import LoginPage from './connexion/connexion.js';
 import Produit from './produits-page/produits-page/produits-page.js';
 import Propos from './propos/propos';
@@ -21,7 +20,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Produit />} />
-        
+        <Route path="/livreur-profile" element={<LivreurProfile />} />
         <Route path="/connexion" element={<LoginPage />} />
         <Route path="/produits-page" element={<Produit />} />
         <Route path="/CaftanDetails" element={<CaftanDetails />} />

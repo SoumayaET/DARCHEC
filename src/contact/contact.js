@@ -41,7 +41,7 @@ export default function Contact() {
       <Header />  
     </div>
       <div className="title-contact">
-          <h1>Connectez-nous</h1>
+          <h1>Contactez-nous</h1>
       </div>
       <form id="form" className='form-contact'>
 

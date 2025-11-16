@@ -3,6 +3,7 @@ import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { TbTruckDelivery } from 'react-icons/tb';
 import './nav.css';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Nav({ cartCount, panier, setPanier }) {
   const [showPanier, setShowPanier] = useState(false);
@@ -38,7 +39,7 @@ export default function Nav({ cartCount, panier, setPanier }) {
         </div>
 
         <a href='#'>
-          <TbTruckDelivery className='nav-icons-accueil' />
+          <Link to="/livreur-profile"><TbTruckDelivery className='nav-icons-accueil' /></Link>
         </a>
         <a href='#'>
           <FaUser className='nav-icons-accueil' />

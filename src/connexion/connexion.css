@@ -1,98 +1,171 @@
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f6f6f6;
-}
 
-.login-container {
+.flex-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f6f6f6;
+
+}
+.div-connexion{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  
+  width: 100%;
   justify-content: center;
-  height: 100vh;
-  gap: 80px;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.logo-connexion{
+  width: 25%;
+  
 }
 
-.login-left {
+.div-connexion img {
+  width: 100%;
+}
+
+.title-connexion{
+  width: 100%;
   text-align: center;
+  margin-bottom:50px ;
+  margin-top: px;
+
+}
+.title-connexion h1{
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #F19800;
+
 }
 
-.logo {
-  width: 120px;
-  margin-bottom: 10px;
+.title-connexion h1::after{
+  content: "";
+  height: 5px;
+  width: 100px;
+  background-color: #ecbc6e;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+.form-connexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    color: gray;
+    box-shadow: 0px 10px 10px rgb(0,0,0,0.4);
+    width: 30%;
+
 }
 
-.brand-name {
-  font-size: 42px;
-  color: #2e2e2e;
-  margin: 0;
+
+
+
+
+.form-connexion .email-input-contact{
+    padding: 5px 5px !important;
+    background-color: #ebe9e5;
+    
+}
+.disabled-contact{
+    background-color: rgb(189, 188, 188) !important;
 }
 
-.brand-slogan {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #444;
+  .div-btn-connexion{
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    width: 100%;
+  }
+.btn-password{
+  position: absolute;
+  right: 25px;
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.8rem;
+  bottom:18px;
+
+}
+.btn-input-password{
+  margin-left: 10px;
+  
+  
+}
+.form-connexion .password-input-connexion{
+  width: 90%;
+  height: 30px;
+  border: none;
+  margin-left: 20px;
+  margin-bottom:10px;
+  padding: 5px 5px !important;
+  background-color: #ebe9e5;
+  text-align: left;
+
 }
 
-.login-box {
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
+.form-connexion .email-input-connexion{
+  width: 90%;
+  height: 30px;
+  border: none;
+  margin-left: 5px;
+  margin-bottom:10px;
+  padding: 5px 5px !important;    
+  background-color: #ebe9e5;
+  text-align: left;
 
-.login-box form {
+}
+#btn-connexion-contact{
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #F19800 ;
+    color: white;
+    font-size: 20px;
+    width: 90%;
+}
+.lien-creer-connexion{
+  border: 2px solid #bab9b9  ;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px 23%
+}
+.lien-oublie-connexion{
+  border: 2px solid #bab9b9 ;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px 18%
+}
+.lien-creer-connexion:hover ,
+.lien-oublie-connexion:hover{
+  border: 2px solid #F19800 ;
+
+}
+.password-input-contact::placeholder ,
+.email-input-contact::placeholder{
+ margin-left: 0px;
+ text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .div-connexion{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-.login-box input {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-}
-
-
-.login-btn{
-  background-color: orange;
-  color: black;
-  border: 2px solid white
-}
-.login-btn:hover {
-  background-color: #d88c00;
-}
-.login-btn ,
-.forgot-btn,
-.create-btn {
-   
   
-  border-radius: 6px;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-.forgot-btn,
-.create-btn{
-  background-color: white;
-  color: orange;
-  border: 2px solid #ccc;
+  width: 80%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.forgot-btn:hover,
-.create-btn:hover {
-   background-color: orange;
-  color: white;
-} 
-.login-btn,
-.forgot-btn,
-.create-btn {
-  width: 100%; 
-  padding: 12px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;}
+  }
